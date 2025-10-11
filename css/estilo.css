@@ -1,0 +1,31 @@
+
+/* Experiência Prática I — CSS base (mobile-first, acessível) */
+:root{ --prim:#0A5; --escuro:#0b132b; --bg:#fff; --txt:#222; }
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{ margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--txt); line-height:1.6;}
+header{ background:var(--escuro); color:#fff; padding:1rem;}
+header .brand{ display:flex; gap:.75rem; align-items:center}
+header .brand svg{ width:36px; height:36px}
+nav ul{ list-style:none; padding:0; margin:.5rem 0 0; display:flex; flex-wrap:wrap; gap:.5rem}
+nav a{ text-decoration:none; color:#fff; background:#1c2541; padding:.5rem .75rem; border-radius:.375rem }
+nav a:focus, nav a:hover{ outline:2px solid #fff }
+main{ padding:1rem; max-width:1100px; margin:auto }
+footer{ background:#f3f4f6; padding:1rem; text-align:center }
+.card{ background:#fff; border:1px solid #e5e7eb; border-radius:.5rem; padding:1rem; box-shadow:0 1px 2px rgba(0,0,0,.05); margin-bottom:1rem }
+.grid{ display:grid; gap:1rem }
+.galeria{ display:grid; grid-template-columns: repeat(auto-fill,minmax(160px,1fr)); gap:.75rem }
+.galeria img{ width:100%; height:160px; object-fit:cover; border-radius:.375rem }
+label{ display:block; font-weight:600; margin-top:.75rem }
+input, select, textarea{ width:100%; padding:.6rem .7rem; border:1px solid #cbd5e1; border-radius:.375rem }
+fieldset{ border:1px solid #cbd5e1; border-radius:.5rem; padding:1rem; margin-top:1rem }
+legend{ font-weight:700 }
+button{ margin-top:1rem; border:0; padding:.7rem 1rem; border-radius:.375rem; background:var(--prim); color:#fff; cursor:pointer }
+table{ width:100%; border-collapse:collapse; margin:1rem 0 }
+th, td{ border:1px solid #e5e7eb; padding:.5rem; text-align:left }
+th{ background:#f0fdf4 }
+/* Acessibilidade */
+.skip-link{ position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden }
+.skip-link:focus{ left:1rem; top:1rem; width:auto; height:auto; background:#fff; padding:.5rem 1rem; border:2px solid #000 }
+:focus{ outline:3px solid #000; outline-offset:2px }
+@media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important} }

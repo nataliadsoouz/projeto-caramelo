@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+  Experiência Prática I
+  Tema: Plataforma ONG
+  Nome: Projeto Caramelo
+  Descrição: Página de cadastro de voluntário com máscaras e integração ViaCEP.
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voluntariado | Projeto Caramelo</title>
+  <meta name="description" content="Cadastre-se como voluntário do Projeto Caramelo e ajude a transformar vidas com amor e responsabilidade.">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header role="banner" aria-label="Cabeçalho do voluntariado">
+  <div class="brand">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#fbbf24"/></svg>
+    <h1>Projeto Caramelo</h1>
+  </div>
+  <nav role="navigation" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="voluntariado.html" aria-current="page">Voluntariado</a></li>
+      <li><a href="doacoes.html">Doações</a></li>
+      <li><a href="transparencia.html">Transparência</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="conteudo" tabindex="-1">
+
+  <section class="card">
+    <h2>Seja um Voluntário Caramelo 🐶</h2>
+    <p>
+      O Projeto Caramelo só é possível graças à dedicação de pessoas como você.  
+      Preencha o formulário abaixo e venha fazer parte dessa corrente do bem!
+    </p>
+  </section>
+
+  <form class="card" aria-labelledby="titulo-vol">
+    <h2 id="titulo-vol">Formulário de Cadastro</h2>
+
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+
+      <label for="nome">Nome completo:</label>
+      <input id="nome" name="nome" type="text" autocomplete="name" required>
+
+      <label for="cpf">CPF:</label>
+      <input id="cpf" name="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" required>
+
+      <label for="tel">Telefone:</label>
+      <input id="tel" name="telefone" type="tel" placeholder="(00) 00000-0000" required>
+
+      <label for="email">E-mail:</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Endereço</legend>
+
+      <label for="cep">CEP:</label>
+      <input id="cep" name="cep" type="text" placeholder="00000-000">
+
+      <label for="rua">Rua:</label>
+      <input id="rua" name="rua" type="text">
+
+      <label for="bairro">Bairro:</label>
+      <input id="bairro" name="bairro" type="text">
+
+      <label for="cidade">Cidade:</label>
+      <input id="cidade" name="cidade" type="text">
+
+      <label for="uf">UF:</label>
+      <input id="uf" name="uf" type="text" maxlength="2">
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferências e Disponibilidade</legend>
+
+      <label for="area">Área de atuação desejada:</label>
+      <select id="area" name="area" required>
+        <option value="">Selecione</option>
+        <option value="resgates">Resgates e cuidados com animais</option>
+        <option value="doacoes">Campanhas de doação</option>
+        <option value="educacao">Educação ambiental</option>
+        <option value="comunicacao">Divulgação e redes sociais</option>
+      </select>
+
+      <label for="disponibilidade">Disponibilidade (dias por semana):</label>
+      <input id="disponibilidade" type="range" min="1" max="7" value="3" oninput="this.nextElementSibling.value = this.value">
+      <output>3</output> dias
+    </fieldset>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+</main>
+
+<footer role="contentinfo">
+  <p>&copy; 2025 Projeto Caramelo — Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/scripts.js" defer></script>
+</body>
+</html>

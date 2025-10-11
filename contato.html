@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+  Experiência Prática I
+  Tema: Plataforma ONG
+  Nome: Projeto Caramelo
+  Descrição: Página de contato e formulário de mensagens.
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Projeto Caramelo</title>
+  <meta name="description" content="Entre em contato com o Projeto Caramelo e saiba como colaborar com nossas ações.">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header role="banner" aria-label="Cabeçalho de contato">
+  <div class="brand">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="10" fill="#fbbf24"/>
+    </svg>
+    <h1>Projeto Caramelo</h1>
+  </div>
+
+  <nav role="navigation" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="voluntariado.html">Voluntariado</a></li>
+      <li><a href="doacoes.html">Doações</a></li>
+      <li><a href="transparencia.html">Transparência</a></li>
+      <li><a href="contato.html" aria-current="page">Contato</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="conteudo" tabindex="-1">
+
+  <section class="card">
+    <h2>Fale Conosco 💛</h2>
+    <p>
+      Quer tirar dúvidas, enviar sugestões ou participar das nossas ações?  
+      Preencha o formulário abaixo — a equipe Caramelo vai adorar conversar com você!
+    </p>
+  </section>
+
+  <form class="card" aria-labelledby="titulo-contato">
+    <h2 id="titulo-contato">Formulário de Contato</h2>
+
+    <fieldset>
+      <legend>Informações de Contato</legend>
+
+      <label for="nome">Nome completo:</label>
+      <input id="nome" name="nome" type="text" required>
+
+      <label for="email">E-mail:</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="assunto">Assunto:</label>
+      <input id="assunto" name="assunto" type="text" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Mensagem</legend>
+
+      <label for="mensagem">Digite sua mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva aqui sua mensagem..." required></textarea>
+
+      <label for="arquivo">Anexar arquivo (opcional):</label>
+      <input id="arquivo" name="arquivo" type="file" accept=".jpg,.jpeg,.png,.pdf,.docx">
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferência de resposta</legend>
+
+      <label>
+        <input type="radio" name="resposta" value="email" checked> E-mail
+      </label>
+      <label>
+        <input type="radio" name="resposta" value="telefone"> Telefone
+      </label>
+    </fieldset>
+
+    <button type="submit">Enviar Mensagem</button>
+  </form>
+
+  <section class="card">
+    <h2>Outros Canais</h2>
+    <p>
+      📍 Endereço: Rua dos Animais Felizes, 123 — Florianópolis/SC<br>
+      📞 Telefone: (48) 99876-5432<br>
+      ✉️ E-mail: contato@projetocaramelo.org
+    </p>
+    <iframe
+      title="Localização Projeto Caramelo"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.002... (exemplo)"
+      width="100%"
+      height="250"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  <p>&copy; 2025 Projeto Caramelo — Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/scripts.js" defer></script>
+</body>
+</html>

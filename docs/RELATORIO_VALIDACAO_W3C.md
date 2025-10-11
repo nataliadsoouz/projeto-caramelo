@@ -1,0 +1,1 @@
+Cole aqui os resultados (prints/links) da validação de cada HTML.

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+  Experiência Prática I
+  Tema: Plataforma ONG
+  Nome: Projeto Caramelo
+  Descrição: Página inicial com missão, visão e valores.
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Caramelo | Plataforma ONG</title>
+  <meta name="description" content="Projeto Caramelo — Cuidando com amor de quem mais precisa.">
+  <meta name="theme-color" content="#d48b2a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header role="banner" aria-label="Cabeçalho principal">
+  <div class="brand" aria-label="Identidade da ONG">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#fbbf24"/></svg>
+    <h1>Projeto Caramelo</h1>
+  </div>
+  <nav role="navigation" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="voluntariado.html">Voluntariado</a></li>
+      <li><a href="doacoes.html">Doações</a></li>
+      <li><a href="transparencia.html">Transparência</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="conteudo" tabindex="-1">
+
+  <section class="card">
+    <h2>Bem-vindo ao Projeto Caramelo 🐾</h2>
+    <p>
+      Somos uma ONG sem fins lucrativos dedicada a oferecer uma segunda chance para cães e gatos abandonados, além de apoiar famílias em situação de vulnerabilidade.
+    </p>
+    <p>
+      Nosso compromisso é transformar vidas por meio do amor, do cuidado e da solidariedade. Acreditamos que cada caramelo — humano ou animal — merece ser tratado com dignidade.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Missão, Visão e Valores</h2>
+    <p><strong>Missão:</strong> Promover o bem-estar de animais e pessoas, através de ações de resgate, acolhimento e educação.</p>
+    <p><strong>Visão:</strong> Ser referência em responsabilidade social e proteção animal em Santa Catarina.</p>
+    <p><strong>Valores:</strong> Amor, respeito, empatia, transparência e compromisso com a vida.</p>
+  </section>
+
+  <section aria-labelledby="destaques" class="card">
+    <h2 id="destaques">Nossos Destaques</h2>
+    <ul>
+      <li><a href="projetos.html">Conheça nossos projetos sociais</a></li>
+      <li><a href="voluntariado.html">Seja um voluntário Caramelo</a></li>
+      <li><a href="doacoes.html">Ajude com uma doação</a></li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Galeria de Momentos</h2>
+    <div class="galeria">
+      <img loading="lazy" src="assets/imagens/galeria_01.jpg" alt="Cachorro resgatado pelo Projeto Caramelo">
+      <img loading="lazy" src="assets/imagens/galeria_02.jpg" alt="Voluntários do Projeto Caramelo em ação">
+      <img loading="lazy" src="assets/imagens/galeria_03.jpg" alt="Doações recebidas pela ONG">
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Vídeo Institucional</h2>
+    <video controls width="100%" poster="assets/imagens/poster.jpg">
+      <source src="assets/videos/institucional.mp4" type="video/mp4">
+      Seu navegador não suporta o vídeo HTML5.
+    </video>
+  </section>
+
+  <section class="card">
+    <h2>Depoimento em Áudio</h2>
+    <audio controls>
+      <source src="assets/audios/depoimento.mp3" type="audio/mpeg">
+      Seu navegador não suporta o áudio HTML5.
+    </audio>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  <p>&copy; 2025 Projeto Caramelo — Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/scripts.js" defer></script>
+</body>
+</html>

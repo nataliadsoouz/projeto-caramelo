@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+  Experiência Prática I
+  Tema: Plataforma ONG
+  Nome: Projeto Caramelo
+  Descrição: Página de projetos sociais e formulário de inscrição.
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos | Projeto Caramelo</title>
+  <meta name="description" content="Conheça os projetos do Projeto Caramelo — ações sociais e resgates que transformam vidas.">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header role="banner" aria-label="Cabeçalho institucional">
+  <div class="brand">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#fbbf24"/></svg>
+    <h1>Projeto Caramelo</h1>
+  </div>
+  <nav role="navigation" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+      <li><a href="voluntariado.html">Voluntariado</a></li>
+      <li><a href="doacoes.html">Doações</a></li>
+      <li><a href="transparencia.html">Transparência</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="conteudo" tabindex="-1">
+
+  <section class="card">
+    <h2>Nossos Projetos</h2>
+    <p>O Projeto Caramelo desenvolve diversas ações sociais que unem amor, responsabilidade e impacto real na comunidade. Conheça alguns dos nossos principais projetos:</p>
+  </section>
+
+  <section class="card">
+    <h3>🐾 Resgata Caramelo</h3>
+    <p>
+      Programa voltado ao resgate e reabilitação de cães e gatos abandonados nas ruas.  
+      Após o acolhimento, os animais recebem atendimento veterinário, carinho e passam por um processo de socialização até estarem prontos para adoção.
+    </p>
+  </section>
+
+  <section class="card">
+    <h3>💛 Caramelo Solidário</h3>
+    <p>
+      Campanha mensal que arrecada alimentos, roupas e produtos de higiene para famílias em situação de vulnerabilidade.  
+      As doações são distribuídas em comunidades parceiras, sempre acompanhadas de ações educativas e recreativas para crianças.
+    </p>
+  </section>
+
+  <section class="card">
+    <h3>🌱 Educação com Caramelo</h3>
+    <p>
+      Projeto voltado à conscientização sobre cuidados com os animais e meio ambiente.  
+      Realizamos palestras em escolas, feiras e eventos, mostrando que respeito e empatia começam desde cedo.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Inscreva-se em um Projeto</h2>
+    <p>Quer fazer parte de uma dessas iniciativas? Preencha o formulário abaixo e venha ser um voluntário Caramelo!</p>
+
+    <form aria-describedby="ajuda-inscricao">
+      <p id="ajuda-inscricao">Escolha um projeto e conte um pouco sobre sua experiência.</p>
+
+      <label for="proj">Projeto:</label>
+      <select id="proj" name="projeto" required>
+        <option value="">Selecione</option>
+        <option value="resgata">Resgata Caramelo</option>
+        <option value="solidario">Caramelo Solidário</option>
+        <option value="educacao">Educação com Caramelo</option>
+      </select>
+
+      <label for="exp">Experiência prévia:</label>
+      <textarea id="exp" name="experiencia" rows="5" placeholder="Conte um pouco sobre suas experiências com voluntariado..." required></textarea>
+
+      <label for="disp">Disponibilidade semanal (em horas):</label>
+      <input id="disp" type="number" min="1" max="40" name="horas" required>
+
+      <button type="submit">Enviar Inscrição</button>
+    </form>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  <p>&copy; 2025 Projeto Caramelo — Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/scripts.js" defer></script>
+</body>
+</html>
